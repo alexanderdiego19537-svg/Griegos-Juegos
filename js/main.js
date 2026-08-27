@@ -1,7 +1,29 @@
 /* ═══════════════════════════════════════════════════════════════
    GRIEGOS JUEGOS — main.js
-   Header scroll · Hamburger · Smooth scroll · AOS · Countdown · FAQ · Stats counter
+   Header scroll · Hamburger · Smooth scroll · AOS · Countdown · FAQ · Stats counter · Catalog filter
    ═══════════════════════════════════════════════════════════════ */
+
+/* ─── CATALOG FILTER ─── */
+function initCatalogFilter() {
+  const btns  = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.products-grid .product-card');
+  if (!btns.length) return;
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      const filter = btn.dataset.filter;
+      cards.forEach(card => {
+        const cat = card.dataset.category || 'all';
+        const show = filter === 'all' || cat === filter;
+        card.style.display = show ? '' : 'none';
+      });
+    });
+  });
+}
+
 
 (function () {
   'use strict';
@@ -208,5 +230,7 @@
     }, { passive: true });
   }
 
-  console.log('%c⚔️ Griegos Juegos — cargado correctamente', 'color:#FAC775;font-weight:bold;font-size:14px;');
+  initCatalogFilter();
+
+  console.log('%c Griegos Juegos — cargado correctamente', 'color:#FAC775;font-weight:bold;font-size:14px;');
 })();
