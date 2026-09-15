@@ -3,178 +3,1056 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sitio Suspendido — Griegos Juegos</title>
-  <meta name="robots" content="noindex, nofollow">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <title>Griegos Juegos | Consolas, Celulares y Accesorios con Garantía — México</title>
+  <meta name="description" content="Compra consolas PlayStation, Xbox, iPhones y accesorios verificados con garantía de 3 meses. Envíos express a toda la República Mexicana en máximo 2 días. Más de 347 ventas exitosas. Griegos Videojuegos México.">
+  <meta name="keywords" content="griegos videojuegos, consolas baratas México, venta de consolas México, PS5 México, Xbox series México, iphone barato México, celulares verificados México, videojuegos consolas, griegos juegos, comprar consola México, iPhone México precio">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Griegos Juegos — Antonio Morales">
+  <meta name="theme-color" content="#12122A">
+  <meta name="geo.region" content="MX">
+  <meta name="geo.placename" content="México">
 
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #0d0d1a;
-      color: #e0e0e0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
+  <!-- Favicon — logo Griegos Juegos -->
+  <link rel="icon" type="image/jpeg" href="favicon.jpg">
+  <link rel="apple-touch-icon" href="assets/images/logo-facebook.jpg">
+  <meta name="google-site-verification" content="lCKeR42IO1yUIKCqn8IfQpFXtAxKPeZMem_MDti8OSk">
 
-    .card {
-      background: #16162a;
-      border: 1.5px solid #c0392b;
-      border-radius: 16px;
-      max-width: 680px;
-      width: 100%;
-      padding: 48px 40px;
-      box-shadow: 0 0 60px rgba(192,57,43,0.25);
-    }
+  <!-- Open Graph -->
+  <meta property="og:title" content="Griegos Juegos — Consolas y Celulares con Garantía en México">
+  <meta property="og:description" content="Consolas y celulares 100% verificados. Garantía 3 meses. Envío express a toda la República. 347 ventas realizadas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://griegos-juegos.vercel.app/">
+  <meta property="og:image" content="https://griegos-juegos.vercel.app/assets/images/logo-facebook.jpg">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Griegos Juegos">
 
-    .icon {
-      font-size: 52px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Griegos Juegos — Consolas y Celulares México">
+  <meta name="twitter:description" content="347 ventas. Garantía 3 meses. Envío express 2 días.">
+  <meta name="twitter:image" content="https://griegos-juegos.vercel.app/assets/images/logo-facebook.jpg">
 
-    h1 {
-      font-size: 28px;
-      color: #e74c3c;
-      text-align: center;
-      margin-bottom: 8px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-    }
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Griegos Juegos",
+    "url": "https://griegos-juegos.vercel.app/",
+    "logo": "https://griegos-juegos.vercel.app/assets/images/logo-facebook.jpg",
+    "image": "https://griegos-juegos.vercel.app/assets/images/logo-facebook.jpg",
+    "description":"Venta de consolas PlayStation, Xbox, iPhones y accesorios verificados con garantía de 3 meses. Entregas express a toda la República Mexicana.",
+    "telephone":"+5511913373569",
+    "priceRange":"$$",
+    "currenciesAccepted":"MXN",
+    "openingHours":"Mo-Su 00:00-23:59",
+    "areaServed":"MX",
+    "address":{"@type":"PostalAddress","addressCountry":"MX","addressLocality":"Ciudad de México"},
+    "sameAs":[
+      "https://www.facebook.com/profile.php?id=61591544702781",
+      "https://www.instagram.com/griego.juegos.tu.opcion/"
+    ],
+    "founder":{"@type":"Person","name":"Antonio Morales"}
+  }
+  </script>
 
-    .subtitle {
-      text-align: center;
-      color: #aaa;
-      font-size: 15px;
-      margin-bottom: 36px;
-    }
-
-    .divider {
-      border: none;
-      border-top: 1px solid #2a2a40;
-      margin: 28px 0;
-    }
-
-    h2 {
-      font-size: 17px;
-      color: #f0a500;
-      margin-bottom: 14px;
-      font-weight: 700;
-    }
-
-    p {
-      font-size: 15px;
-      line-height: 1.75;
-      color: #ccc;
-      margin-bottom: 16px;
-    }
-
-    .highlight {
-      background: rgba(192,57,43,0.12);
-      border-left: 4px solid #c0392b;
-      border-radius: 0 8px 8px 0;
-      padding: 14px 18px;
-      margin: 20px 0;
-      font-size: 14px;
-      color: #ddd;
-      line-height: 1.7;
-    }
-
-    .highlight strong {
-      color: #e74c3c;
-    }
-
-    .info-box {
-      background: rgba(240,165,0,0.08);
-      border: 1px solid rgba(240,165,0,0.25);
-      border-radius: 10px;
-      padding: 18px 20px;
-      margin: 20px 0;
-    }
-
-    .info-box p { margin-bottom: 6px; color: #ccc; font-size: 14px; }
-    .info-box p:last-child { margin-bottom: 0; }
-
-    .badge {
-      display: inline-block;
-      background: #c0392b;
-      color: #fff;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      padding: 4px 10px;
-      border-radius: 20px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    .footer {
-      margin-top: 32px;
-      text-align: center;
-      font-size: 12px;
-      color: #555;
-      line-height: 1.8;
-    }
-
-    .date-tag {
-      color: #f0a500;
-      font-weight: 600;
-    }
-  </style>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="card">
-    <div class="icon">🚫</div>
-    <h1>SITIO SUSPENDIDO</h1>
-    <p class="subtitle">Este sitio web ha sido dado de baja temporalmente</p>
 
-    <hr class="divider">
+<!-- ══════════ HEADER ══════════ -->
+<header id="header">
+  <div class="greek-bar"></div>
+  <nav class="navbar" id="navbar">
+    <a href="#inicio" class="logo-link" aria-label="Griegos Juegos — Inicio">
+      <img src="assets/images/logo.png" alt="Logo Griegos Juegos" class="logo-img">
+      <span class="logo-text">Griegos Juegos</span>
+    </a>
+    <ul class="nav-links" id="nav-links" role="navigation" aria-label="Menú principal">
+      <li><a href="#inicio"   class="nav-link">Inicio</a></li>
+      <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+      <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+      <li><a href="#faq"      class="nav-link">Garantía</a></li>
+      <li><a href="#redes"    class="nav-link">Contacto</a></li>
+      <li>
+        <a href="https://wa.me/5511913373569?text=Hola%2C%20quiero%20información%20sobre%20sus%20productos"
+           class="btn-wa-nav" target="_blank" rel="noopener noreferrer" id="nav-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp
+        </a>
+      </li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
 
-    <span class="badge">Aviso oficial del desarrollador</span>
-    <h2>Motivo de la suspensión: Falta de pago por servicios de desarrollo web</h2>
+<!-- Mobile overlay & nav -->
+<div class="mobile-overlay" id="mobile-overlay" onclick="closeMobileNav()"></div>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Menú móvil">
+  <div class="mobile-nav-header">
+    <img src="assets/images/logo.png" alt="Logo" class="mobile-logo">
+    <span>Griegos Juegos</span>
+    <button class="mobile-nav-close" onclick="closeMobileNav()" aria-label="Cerrar menú">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <ul>
+    <li><a href="#inicio"   class="mobile-nav-link">Inicio</a></li>
+    <li><a href="#catalogo" class="mobile-nav-link">Catálogo</a></li>
+    <li><a href="#nosotros" class="mobile-nav-link">Nosotros</a></li>
+    <li><a href="#faq"      class="mobile-nav-link">Garantía</a></li>
+    <li><a href="#redes"    class="mobile-nav-link">Contacto</a></li>
+  </ul>
+  <a href="https://wa.me/5511913373569?text=Hola%2C%20quiero%20información%20sobre%20sus%20productos"
+     class="mobile-wa-cta" target="_blank" rel="noopener noreferrer">
+    Contactar por WhatsApp — 24/7
+  </a>
+</nav>
 
-    <p>
-      Este sitio web <strong>griegos-juegos.vercel.app</strong> fue diseñado y desarrollado de forma profesional y completa por un desarrollador web independiente. El trabajo fue entregado en su totalidad, incluyendo diseño, programación, catálogo de productos, integración con WhatsApp, posicionamiento en Google (SEO), y publicación en línea.
-    </p>
+<!-- ══════════ HERO ══════════ -->
+<section id="inicio" class="hero" aria-label="Inicio">
+  <div class="hero-bg" style="background-image:url('assets/images/hero-bg.png')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-particles" id="hero-particles" aria-hidden="true"></div>
+  <div class="lightning left"  aria-hidden="true"></div>
+  <div class="lightning right" aria-hidden="true"></div>
 
-    <div class="highlight">
-      <strong>⚠️ El propietario del negocio "Griegos Juegos" NO realizó el pago acordado</strong> por los servicios de desarrollo web a pesar de haber recibido el trabajo completo y funcional. Ante el incumplimiento del pago, el desarrollador ha ejercido su derecho legítimo de suspender el servicio.
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="hero-badge-dot" aria-hidden="true"></span>
+      347 ventas realizadas &nbsp;·&nbsp; 100% verificados &nbsp;·&nbsp; Garantía 3 meses
     </div>
-
-    <hr class="divider">
-
-    <h2>📋 Derechos del desarrollador</h2>
-    <p>
-      Conforme a la legislación mexicana en materia de prestación de servicios (Código Civil Federal, Arts. 2606–2615) y propiedad intelectual, el desarrollador conserva todos los derechos sobre el código, diseño y recursos visuales de este sitio hasta que se realice el pago íntegro de los servicios prestados.
-    </p>
-
-    <div class="info-box">
-      <p>📅 <strong>Fecha de entrega del proyecto:</strong> <span class="date-tag">Agosto 2026</span></p>
-      <p>📅 <strong>Fecha de suspensión del servicio:</strong> <span class="date-tag">Septiembre 2026</span></p>
-      <p>💳 <strong>Estado del pago:</strong> <span style="color:#e74c3c;font-weight:700;">NO REALIZADO</span></p>
-      <p>🔒 <strong>Estado del sitio:</strong> <span style="color:#e74c3c;font-weight:700;">SUSPENDIDO hasta liquidación</span></p>
+    <div class="hero-logo-wrap">
+      <img src="assets/images/logo.png" alt="Griegos Juegos" class="hero-logo">
     </div>
-
-    <hr class="divider">
-
-    <h2>📣 Información para usuarios y clientes del negocio</h2>
-    <p>
-      Si usted era cliente o seguidor de "Griegos Juegos" y buscaba sus productos, sepa que este sitio web fue creado por un desarrollador independiente que no ha recibido remuneración por su trabajo. El desarrollador no tiene ninguna relación ni responsabilidad sobre las transacciones comerciales del negocio.
-    </p>
-    <p>
-      El sitio podrá reanudarse únicamente cuando el propietario del negocio cumpla con el pago de los servicios de desarrollo web.
-    </p>
-
-    <hr class="divider">
-
-    <div class="footer">
-      <p>Este aviso es emitido de buena fe por el desarrollador web del proyecto.</p>
-      <p>El desarrollador se reserva el derecho de emprender acciones legales por incumplimiento de contrato de prestación de servicios.</p>
-      <p style="margin-top:12px;">© 2026 — Todos los derechos sobre el diseño y código de este sitio son del desarrollador.</p>
+    <h1 class="hero-name">Griegos Juegos</h1>
+    <p class="hero-slogan">Tecnología y entretenimiento a un clic</p>
+    <div class="hero-btns">
+      <a href="#catalogo" class="btn-navy" id="btn-ver-catalogo">
+        Ver catálogo
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="https://wa.me/5511913373569?text=Hola%2C%20quiero%20información%20sobre%20sus%20productos"
+         class="btn-outline-white" target="_blank" rel="noopener noreferrer" id="btn-hero-wa">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        WhatsApp Directo
+      </a>
+    </div>
+    <div class="hero-trust-bar">
+      <span>Envío express máx. 2 días</span>
+      <span class="trust-sep">·</span>
+      <span>Garantía 3 meses</span>
+      <span class="trust-sep">·</span>
+      <span>Todos los métodos de pago</span>
     </div>
   </div>
+  <div class="hero-scroll-down" aria-hidden="true"><span class="scroll-icon"></span></div>
+</section>
+
+<div class="greek-divider-full" aria-hidden="true"></div>
+
+<!-- ══════════ CATÁLOGO ══════════ -->
+<section id="catalogo" class="section catalog-section" aria-label="Catálogo de productos">
+  <div class="section-header">
+    <div class="section-label">CATÁLOGO COMPLETO</div>
+    <h2 class="section-title">Consolas y Celulares <span class="gold">Verificados</span></h2>
+    <p class="section-subtitle">Envío express a toda la República. Productos verificados con garantía de 3 meses. Para artículos sin precio visible, consulta disponibilidad directo por WhatsApp.</p>
+  </div>
+
+  <!-- Filtros de categoría -->
+  <div class="catalog-filter-bar" role="tablist" aria-label="Filtrar productos">
+    <button class="filter-btn active" data-filter="all"      role="tab" aria-selected="true">Todos</button>
+    <button class="filter-btn"        data-filter="consola"  role="tab" aria-selected="false">Consolas</button>
+    <button class="filter-btn"        data-filter="celular"  role="tab" aria-selected="false">Celulares</button>
+  </div>
+
+  <div class="products-grid" id="products-grid">
+
+    <!-- ── CONSOLAS ── -->
+
+    <!-- PS5 -->
+    <article class="product-card featured-card" data-category="consola" data-aos>
+      <div class="product-badge oferta">OFERTA</div>
+      <div class="product-featured-tag">MÁS VENDIDO</div>
+      <div class="product-img-container">
+        <img src="assets/images/producto-ps5.jpg"
+             alt="PlayStation 5 — Griegos Juegos" class="product-img" loading="lazy"
+             onerror="this.parentElement.classList.add('img-error');this.style.display='none'">
+        <div class="product-emoji-fallback">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="64" height="64"><rect x="2" y="8" width="20" height="12" rx="3"/><path d="M8 8V6a4 4 0 018 0v2"/></svg>
+        </div>
+      </div>
+      <div class="product-countdown" id="cd-3"></div>
+      <div class="product-body">
+        <h3 class="product-name">PlayStation 5</h3>
+        <div class="product-prices">
+          <span class="price-old">$6,000 MXN</span>
+          <span class="price-now">$5,000 MXN</span>
+        </div>
+        <p class="product-desc">Con control DualSense, base, cables y caja original. Equipo verificado y garantizado.</p>
+        <a href="https://wa.me/5511913373569?text=Hola%21+Me+interesa+la+PlayStation+5+a+%245%2C000+MXN.+%C2%BFEst%C3%A1+disponible%3F"
+           class="btn-comprar" target="_blank" rel="noopener noreferrer" id="btn-ps5">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Comprar por WhatsApp
+        </a>
+      </div>
+    </article>
+
+    <!-- Xbox Series S -->
+    <article class="product-card" data-category="consola" data-aos>
+      <div class="product-badge oferta">OFERTA</div>
+      <div class="product-img-container">
+        <img src="assets/images/producto-xboxseries-s.png"
+             alt="Xbox Series S — Griegos Juegos" class="product-img" loading="lazy"
+             onerror="this.parentElement.classList.add('img-error');this.style.display='none'">
+        <div class="product-emoji-fallback">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="64" height="64"><rect x="2" y="8" width="20" height="12" rx="3"/><path d="M8 8V6a4 4 0 018 0v2"/></svg>
+        </div>
+      </div>
+      <div class="product-countdown" id="cd-2"></div>
+      <div class="product-body">
+        <h3 class="product-name">Xbox Series S</h3>
+        <div class="product-prices">
+          <span class="price-old">$4,000 MXN</span>
+          <span class="price-now">$3,000 MXN</span>
+        </div>
+        <p class="product-desc">Con 2 controles incluidos. Ideal para gaming de siguiente generación a precio accesible.</p>
+        <a href="https://wa.me/5511913373569?text=Hola%21+Me+interesa+el+Xbox+Series+S+a+%243%2C000+MXN.+%C2%BFEst%C3%A1+disponible%3F"
+           class="btn-comprar" target="_blank" rel="noopener noreferrer" id="btn-xboxs">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Comprar por WhatsApp
+        </a>
+      </div>
+    </article>
+
+    <!-- Xbox Series X -->
+    <article class="product-card" data-category="consola" data-aos>
+      <div class="product-badge ultimas">ÚLTIMAS UNIDADES</div>
+      <div class="product-img-container">
+        <img src="assets/images/producto-xboxseries-x.png"
+             alt="Xbox Series X 1TB — Griegos Juegos" class="product-img" loading="lazy"
+             onerror="this.parentElement.classList.add('img-error');this.style.display='none'">
+        <div class="product-emoji-fallback">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="64" height="64"><rect x="2" y="8" width="20" height="12" rx="3"/><path d="M8 8V6a4 4 0 018 0v2"/></svg>
+        </div>
+      </div>
+      <div class="product-body">
+        <h3 class="product-name">Xbox Series X 1TB</h3>
+        <div class="product-prices">
+          <span class="price-old">$5,500 MXN</span>
+          <span class="price-now">$5,000 MXN</span>
+        </div>
+        <p class="product-desc">Con 2 controles, caja original y cables. La potencia máxima de Xbox.</p>
+        <a href="https://wa.me/5511913373569?text=Hola%21+Me+interesa+el+Xbox+Series+X+1TB+a+%245%2C000+MXN.+%C2%BFEst%C3%A1+disponible%3F"
+           class="btn-comprar" target="_blank" rel="noopener noreferrer" id="btn-xboxx">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Comprar por WhatsApp
+        </a>
+      </div>
+    </article>
+
+    <!-- ── CELULARES CON PRECIO ── -->
+
+    <!-- iPhone 13 Pro Max -->
+    <article class="product-card" data-category="celular" data-aos>
+      <div class="product-badge oferta">OFERTA</div>
+      <div class="product-img-container">
+        <img src="assets/images/producto-iphone13promax.jpg"
+             alt="iPhone 13 Pro Max 256GB — Griegos Juegos" class="product-img" loading="lazy"
+             onerror="this.parentElement.classList.add('img-error');this.style.display='none'">
+        <div class="product-emoji-fallback">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="64" height="64"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="17" r="1"/></svg>
+        </div>
+      </div>
+      <div class="product-countdown" id="cd-1"></div>
+      <div class="product-body">
+        <h3 class="product-name">iPhone 13 Pro Max 256 GB</h3>
+        <div class="product-prices">
+          <span class="price-old">$6,200 MXN</span>
+          <span class="price-now">$6,000 MXN</span>
+        </div>
+        <p class="product-desc">Con caja original, cable y accesorios. Equipo 100% verificado y funcional.</p>
+        <a href="https://wa.me/5511913373569?text=Hola%21+Me+interesa+el+iPhone+13+Pro+Max+256GB+a+%246%2C000+MXN.+%C2%BFEst%C3%A1+disponible%3F"
+           class="btn-comprar" target="_blank" rel="noopener noreferrer" id="btn-iphone13">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Comprar por WhatsApp
+        </a>
+      </div>
+    </article>
+
+    <!-- ── CELULARES — CONSULTAR DISPONIBILIDAD ── -->
+
+    <!-- iPhone 14 Pro Max -->
+    <article class="product-card card-consult" data-category="celular" data-aos>
+      <div class="product-badge consultar">CONSULTAR</div>
+      <div class="product-img-container">
+        <img src="assets/images/producto-iphone14promax.png"
+             alt="iPhone 14 Pro Max — Griegos Juegos" class="product-img" loading="lazy"
+             style="object-fit:contain;padding:12px"
+             onerror="this.parentElement.classList.add('img-error');this.style.display='none'">
+        <div class="product-emoji-fallback">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="64" height="64"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="17" r="1"/></svg>
+        </div>
+      </div>
+      <div class="product-body">
+        <h3 class="product-name">iPhone 14 Pro Max</h3>
+        <div class="product-prices"><span class="price-consult">Consultar precio por WhatsApp</span></div>
+        <p class="product-desc">Disponibilidad sujeta a stock. Escríbenos para confirmar y conocer el precio actual.</p>
+        <a href="https://wa.me/5511913373569?text=Hola%21+Me+interesa+el+iPhone+14+Pro+Max.+%C2%BFTienen+disponibilidad+y+cu%C3%A1l+es+el+precio%3F"
+           class="btn-consultar" target="_blank" rel="noopener noreferrer" id="btn-i14">
+          Consultar disponibilidad
+        </a>
+      </div>
+    </article>
+
+    <!-- iPhone 15 Pro Max -->
+    <article class="product-card card-consult" data-category="celular" data-aos>
+      <div class="product-badge consultar">CONSULTAR</div>
+      <div class="product-img-container">
+        <img src="assets/images/producto-iphone15promax.png"
+             alt="iPhone 15 Pro Max — Griegos Juegos" class="product-img" loading="lazy"
+             style="object-fit:contain;padding:12px"
+             onerror="this.parentElement.classList.add('img-error');this.style.display='none'">
+        <div class="product-emoji-fallback">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="64" height="64"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="17" r="1"/></svg>
+        </div>
+      </div>
+      <div class="product-body">
+        <h3 class="product-name">iPhone 15 Pro Max</h3>
+        <div class="product-prices"><span class="price-consult">Consultar precio por WhatsApp</span></div>
+        <p class="product-desc">Titanio natural, cámara de 48MP, chip A17 Pro. Disponibilidad por confirmar.</p>
+        <a href="https://wa.me/5511913373569?text=Hola%21+Me+interesa+el+iPhone+15+Pro+Max.+%C2%BFTienen+disponibilidad+y+cu%C3%A1l+es+el+precio%3F"
+           class="btn-consultar" target="_blank" rel="noopener noreferrer" id="btn-i15">
+          Consultar disponibilidad
+        </a>
+      </div>
+    </article>
+
+    <!-- iPhone 16 Pro Max -->
+    <article class="product-card card-consult" data-category="celular" data-aos>
+      <div class="product-badge consultar">CONSULTAR</div>
+      <div class="product-img-container">
+        <img src="assets/images/producto-iphone16promax.png"
+             alt="iPhone 16 Pro Max — Griegos Juegos" class="product-img" loading="lazy"
+             style="object-fit:contain;padding:12px"
+             onerror="this.parentElement.classList.add('img-error');this.style.display='none'">
+        <div class="product-emoji-fallback">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="64" height="64"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="17" r="1"/></svg>
+        </div>
+      </div>
+      <div class="product-body">
+        <h3 class="product-name">iPhone 16 Pro Max</h3>
+        <div class="product-prices"><span class="price-consult">Consultar precio por WhatsApp</span></div>
+        <p class="product-desc">El modelo más reciente con Apple Intelligence. Disponibilidad sujeta a stock.</p>
+        <a href="https://wa.me/5511913373569?text=Hola%21+Me+interesa+el+iPhone+16+Pro+Max.+%C2%BFTienen+disponibilidad+y+cu%C3%A1l+es+el+precio%3F"
+           class="btn-consultar" target="_blank" rel="noopener noreferrer" id="btn-i16">
+          Consultar disponibilidad
+        </a>
+      </div>
+    </article>
+
+    <!-- iPhone 17 Pro Max -->
+    <article class="product-card card-consult" data-category="celular" data-aos>
+      <div class="product-badge consultar">CONSULTAR</div>
+      <div class="product-img-container">
+        <img src="assets/images/producto-iphone17promax.png"
+             alt="iPhone 17 Pro Max — Griegos Juegos" class="product-img" loading="lazy"
+             style="object-fit:contain;padding:12px"
+             onerror="this.parentElement.classList.add('img-error');this.style.display='none'">
+        <div class="product-emoji-fallback">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="64" height="64"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="17" r="1"/></svg>
+        </div>
+      </div>
+      <div class="product-body">
+        <h3 class="product-name">iPhone 17 Pro Max</h3>
+        <div class="product-prices"><span class="price-consult">Consultar precio por WhatsApp</span></div>
+        <p class="product-desc">Lo más nuevo de Apple. Pregunta por disponibilidad y precio actualizado.</p>
+        <a href="https://wa.me/5511913373569?text=Hola%21+Me+interesa+el+iPhone+17+Pro+Max.+%C2%BFTienen+disponibilidad+y+cu%C3%A1l+es+el+precio%3F"
+           class="btn-consultar" target="_blank" rel="noopener noreferrer" id="btn-i17">
+          Consultar disponibilidad
+        </a>
+      </div>
+    </article>
+
+    <!-- Samsung S25 Ultra -->
+    <article class="product-card card-consult" data-category="celular" data-aos>
+      <div class="product-badge consultar">CONSULTAR</div>
+      <div class="product-img-container">
+        <img src="assets/images/producto-samsung-s25ultra.png"
+             alt="Samsung Galaxy S25 Ultra — Griegos Juegos" class="product-img" loading="lazy"
+             style="object-fit:cover"
+             onerror="this.parentElement.classList.add('img-error');this.style.display='none'">
+        <div class="product-emoji-fallback">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="64" height="64"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="17" r="1"/></svg>
+        </div>
+      </div>
+      <div class="product-body">
+        <h3 class="product-name">Samsung Galaxy S25 Ultra</h3>
+        <div class="product-prices"><span class="price-consult">Consultar precio por WhatsApp</span></div>
+        <p class="product-desc">Snapdragon 8 Elite, S Pen incluido, cámara 200MP. Disponibilidad por confirmar.</p>
+        <a href="https://wa.me/5511913373569?text=Hola%21+Me+interesa+el+Samsung+Galaxy+S25+Ultra.+%C2%BFTienen+disponibilidad+y+cu%C3%A1l+es+el+precio%3F"
+           class="btn-consultar" target="_blank" rel="noopener noreferrer" id="btn-s25">
+          Consultar disponibilidad
+        </a>
+      </div>
+    </article>
+
+    <!-- Samsung S24 Ultra -->
+    <article class="product-card card-consult" data-category="celular" data-aos>
+      <div class="product-badge consultar">CONSULTAR</div>
+      <div class="product-img-container">
+        <img src="assets/images/producto-samsung-s24ultra.png"
+             alt="Samsung Galaxy S24 Ultra — Griegos Juegos" class="product-img" loading="lazy"
+             style="object-fit:contain;padding:10px"
+             onerror="this.parentElement.classList.add('img-error');this.style.display='none'">
+        <div class="product-emoji-fallback">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="64" height="64"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="17" r="1"/></svg>
+        </div>
+      </div>
+      <div class="product-body">
+        <h3 class="product-name">Samsung Galaxy S24 Ultra</h3>
+        <div class="product-prices"><span class="price-consult">Consultar precio por WhatsApp</span></div>
+        <p class="product-desc">Titanio premium, S Pen integrado, IA Galaxy. Disponibilidad por confirmar.</p>
+        <a href="https://wa.me/5511913373569?text=Hola%21+Me+interesa+el+Samsung+Galaxy+S24+Ultra.+%C2%BFTienen+disponibilidad+y+cu%C3%A1l+es+el+precio%3F"
+           class="btn-consultar" target="_blank" rel="noopener noreferrer" id="btn-s24">
+          Consultar disponibilidad
+        </a>
+      </div>
+    </article>
+
+  </div><!-- /products-grid -->
+
+  <!-- Nota de disponibilidad -->
+  <div class="catalog-note">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    <span>Los productos marcados con <strong>CONSULTAR</strong> están sujetos a disponibilidad de stock. Escríbenos por WhatsApp para confirmar existencia y precio actualizado.</span>
+  </div>
+
+</section>
+
+<div class="greek-divider-full" aria-hidden="true"></div>
+
+<!-- ══════════ PROCESO DE ENVÍO (fotos reales) ══════════ -->
+<section class="section shipping-section" aria-label="Proceso de envío y empaque">
+  <div class="section-header">
+    <div class="section-label">ENVÍOS REALES</div>
+    <h2 class="section-title">Así enviamos tus <span class="gold">productos</span></h2>
+    <p class="section-subtitle">Cada paquete es preparado con cuidado y enviado con DHL o FedEx. Recibes foto del empaque y número de rastreo antes de que salga.</p>
+  </div>
+  <div class="shipping-gallery">
+    <div class="shipping-img-card" data-aos>
+      <img src="assets/images/envio-ps5-caja.jpg" alt="PS5 empacada en caja de envío — Griegos Juegos" loading="lazy">
+      <div class="shipping-label">PS5 lista para envío</div>
+    </div>
+    <div class="shipping-img-card" data-aos>
+      <img src="assets/images/envio-samsung-fedex.jpg" alt="Samsung entregado en FedEx — Griegos Juegos" loading="lazy">
+      <div class="shipping-label">Entrega en FedEx</div>
+    </div>
+    <div class="shipping-img-card" data-aos>
+      <img src="assets/images/envio-samsung-dhl.png" alt="Samsung S23 Ultra verificado en DHL — Griegos Juegos" loading="lazy">
+      <div class="shipping-label">Verificación en DHL Express</div>
+    </div>
+    <div class="shipping-img-card" data-aos>
+      <img src="assets/images/envio-paquete-grande.jpg" alt="Empaque de consola grande en FedEx — Griegos Juegos" loading="lazy">
+      <div class="shipping-label">Empaque seguro certificado</div>
+    </div>
+  </div>
+  <div class="shipping-trust-bar">
+    <div class="stb-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <span>Empaque protegido</span>
+    </div>
+    <div class="stb-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>Número de rastreo incluido</span>
+    </div>
+    <div class="stb-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="2" y="8" width="20" height="12" rx="3"/><path d="M16 8V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v3"/></svg>
+      <span>DHL · FedEx express</span>
+    </div>
+    <div class="stb-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+      <span>Foto de envío al despachar</span>
+    </div>
+  </div>
+</section>
+
+
+<div class="greek-divider-full" aria-hidden="true"></div>
+
+
+<div class="greek-divider-full" aria-hidden="true"></div>
+
+<!-- ══════════ STATS ══════════ -->
+<section class="stats-section" aria-label="Estadísticas">
+  <div class="stats-bg" aria-hidden="true"></div>
+  <div class="stats-overlay" aria-hidden="true"></div>
+  <div class="stats-content">
+    <div class="section-label on-dark">OFERTAS QUE NO SE REPITEN</div>
+    <h2 class="stats-title">Precios especiales en productos seleccionados</h2>
+    <p class="stats-sub">Stock limitado — asegura tu equipo antes de que se agoten las unidades.</p>
+    <div class="stats-grid">
+      <div class="stat-card" data-aos>
+        <div class="stat-number" data-count="7">0</div>
+        <div class="stat-label">Productos estrella en catálogo</div>
+      </div>
+      <div class="stat-card" data-aos>
+        <div class="stat-number">$3K</div>
+        <div class="stat-label">Desde — consolas de siguiente generación</div>
+      </div>
+      <div class="stat-card" data-aos>
+        <div class="stat-number" data-count="347">0</div>
+        <div class="stat-label">Ventas exitosas realizadas</div>
+      </div>
+      <div class="stat-card" data-aos>
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Atención directa por WhatsApp</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="greek-divider-full" aria-hidden="true"></div>
+
+<!-- ══════════ REDES SOCIALES ══════════ -->
+<section id="redes" class="section social-section" aria-label="Redes sociales y contacto">
+  <div class="section-header">
+    <div class="section-label">SÍGUENOS</div>
+    <h2 class="section-title">Conéctate con <span class="gold">Griegos Juegos</span></h2>
+    <p class="section-subtitle">Contáctanos directamente, ve nuestros productos más recientes y sigue nuestras ofertas exclusivas en redes sociales.</p>
+  </div>
+
+  <div class="social-mega-grid">
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/5511913373569?text=Hola%21+Quiero+información+sobre+sus+productos"
+       class="social-mega-card" target="_blank" rel="noopener noreferrer" id="social-wa" data-aos>
+      <div class="smc-icon wa-color">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      </div>
+      <div class="smc-body">
+        <span class="smc-platform">WhatsApp</span>
+        <span class="smc-handle">+55 11913373569</span>
+        <span class="smc-desc">Atención directa y personalizada, sin bots. Respuesta en menos de 1 hora, todos los días.</span>
+        <span class="smc-badge">Disponible 24/7</span>
+      </div>
+      <div class="smc-cta wa-color">
+        Escribir ahora
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/profile.php?id=61591544702781&locale=es_LA"
+       class="social-mega-card" target="_blank" rel="noopener noreferrer" id="social-fb" data-aos>
+      <div class="smc-icon fb-color">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </div>
+      <div class="smc-body">
+        <span class="smc-platform">Facebook</span>
+        <span class="smc-handle">Griegos Juegos</span>
+        <span class="smc-desc">Síguenos para ver nuestros productos, ofertas especiales y publicaciones de clientes satisfechos.</span>
+        <span class="smc-badge">Ver página</span>
+      </div>
+      <div class="smc-cta fb-color">
+        Ver en Facebook
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/griego.juegos.tu.opcion/"
+       class="social-mega-card" target="_blank" rel="noopener noreferrer" id="social-ig" data-aos>
+      <div class="smc-icon ig-color">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </div>
+      <div class="smc-body">
+        <span class="smc-platform">Instagram</span>
+        <span class="smc-handle">@griego.juegos.tu.opcion</span>
+        <span class="smc-desc">Mira fotos de nuestros productos, referencias de clientes y las últimas novedades del catálogo.</span>
+        <span class="smc-badge">Ver perfil</span>
+      </div>
+      <div class="smc-cta ig-color">
+        Ver en Instagram
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<div class="greek-divider-full" aria-hidden="true"></div>
+
+<!-- ══════════ FAQ ══════════ -->
+<section id="faq" class="section faq-section alt" aria-label="Preguntas frecuentes">
+  <div class="section-header">
+    <div class="section-label">COMPRA SEGURA</div>
+    <h2 class="section-title">Tu <span class="gold">tranquilidad</span> es nuestra prioridad</h2>
+    <p class="section-subtitle">Resolvemos todas tus dudas antes de comprar. Transparencia total en cada venta.</p>
+  </div>
+  <div class="faq-grid">
+    <div class="faq-card" id="faq-1" data-aos>
+      <button class="faq-trigger" onclick="toggleFAQ('faq-1')" aria-expanded="false">
+        <div class="faq-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <span class="faq-q">¿Cómo funciona el envío?</span>
+        <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-body"><p>Realizamos envíos a toda la República Mexicana. Usamos <strong>DHL y FedEx</strong> con número de rastreo incluido. Te enviamos foto del empaque y la guía al momento de despachar.</p></div>
+    </div>
+    <div class="faq-card" id="faq-2" data-aos>
+      <button class="faq-trigger" onclick="toggleFAQ('faq-2')" aria-expanded="false">
+        <div class="faq-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <span class="faq-q">¿Cuánto tarda la entrega?</span>
+        <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-body"><p>Envío <strong>express — máximo 2 días hábiles</strong> a toda la República. Ciudades principales como CDMX, Monterrey, Tijuana y Cancún pueden recibir en 24 a 48 horas.</p></div>
+    </div>
+    <div class="faq-card" id="faq-3" data-aos>
+      <button class="faq-trigger" onclick="toggleFAQ('faq-3')" aria-expanded="false">
+        <div class="faq-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <span class="faq-q">¿Qué garantía tienen los productos?</span>
+        <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-body"><p>Todos los artículos tienen <strong>garantía de 3 meses</strong>. Cubre fallas eléctricas y problemas del dispositivo. Si algo falla, escríbenos por WhatsApp y buscamos solución inmediata.</p></div>
+    </div>
+    <div class="faq-card" id="faq-4" data-aos>
+      <button class="faq-trigger" onclick="toggleFAQ('faq-4')" aria-expanded="false">
+        <div class="faq-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        </div>
+        <span class="faq-q">¿Puedo pagar en dos partes?</span>
+        <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-body"><p>Sí. Ofrecemos pago en dos partes: <strong>50% de anticipo</strong> para apartar tu producto y el 50% restante al confirmar el envío. Aceptamos SPEI, OXXO, tarjeta y PayPal.</p></div>
+    </div>
+    <div class="faq-card" id="faq-5" data-aos>
+      <button class="faq-trigger" onclick="toggleFAQ('faq-5')" aria-expanded="false">
+        <div class="faq-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <span class="faq-q">¿Cómo los contacto?</span>
+        <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-body"><p>Escríbenos por <strong>WhatsApp</strong> para resolver dudas, cotizar o confirmar disponibilidad. Atención personalizada las <strong>24 horas, los 7 días de la semana</strong>. Sin esperas largas.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="greek-divider-full" aria-hidden="true"></div>
+
+<!-- ══════════ POR QUÉ ELEGIRNOS ══════════ -->
+<section id="nosotros" class="section why-section" aria-label="Por qué elegirnos">
+  <div class="section-header">
+    <div class="section-label">¿POR QUÉ ELEGIRNOS?</div>
+    <h2 class="section-title">La ventaja <span class="gold">Griegos Juegos</span></h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-card" data-aos>
+      <div class="why-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="36" height="36"><path d="M5 12h14M12 5l7 7-7 7"/><rect x="1" y="3" width="22" height="18" rx="3" stroke-width="1.5"/></svg>
+      </div>
+      <h3>Envíos nacionales</h3>
+      <p>Llegamos a toda la República con paquetería segura y rastreable. Tu compra llega a tu puerta en máximo 2 días.</p>
+    </div>
+    <div class="why-card" data-aos>
+      <div class="why-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="36" height="36"><path d="M20 6L9 17l-5-5"/></svg>
+      </div>
+      <h3>Productos verificados</h3>
+      <p>Cada consola y celular pasa revisión antes de la venta. Calidad garantizada en cada artículo de nuestro catálogo.</p>
+    </div>
+    <div class="why-card" data-aos>
+      <div class="why-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="36" height="36"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </div>
+      <h3>Atención directa 24/7</h3>
+      <p>Habla con nosotros en tiempo real por WhatsApp. Soporte personalizado, sin bots. Estamos aquí cuando lo necesitas.</p>
+    </div>
+    <div class="why-card" data-aos>
+      <div class="why-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="36" height="36"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h3>Garantía en cada producto</h3>
+      <p>Respaldamos lo que vendemos. 3 meses de garantía incluida. Si algo no funciona, buscamos solución inmediata.</p>
+    </div>
+  </div>
+</section>
+
+<div class="greek-divider-full" aria-hidden="true"></div>
+
+<!-- ══════════ HONOR ESPARTANO ══════════ -->
+<section class="section spartan-section alt" aria-label="Valores del negocio">
+  <div class="section-header">
+    <h2 class="section-title">Calidad con honor <span class="gold">espartano</span></h2>
+    <p class="section-subtitle">Nos inspiramos en la disciplina y excelencia espartana. Cada venta es un compromiso. Cada producto, una promesa cumplida.</p>
+  </div>
+  <div class="spartan-grid">
+    <div class="spartan-card" data-aos>
+      <div class="spartan-icon-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="32" height="32"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      </div>
+      <h3>Disciplina</h3>
+      <p>Revisamos cada producto con rigor antes de la venta. Cero tolerancia a la baja calidad.</p>
+    </div>
+    <div class="spartan-card" data-aos>
+      <div class="spartan-icon-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="32" height="32"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <h3>Confianza</h3>
+      <p>Más de 347 clientes satisfechos que vuelven y nos recomiendan en toda la República.</p>
+    </div>
+    <div class="spartan-card" data-aos>
+      <div class="spartan-icon-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="32" height="32"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <h3>Excelencia</h3>
+      <p>Los mejores precios sin sacrificar calidad ni servicio. Esa es nuestra promesa.</p>
+    </div>
+  </div>
+</section>
+
+<div class="greek-divider-full" aria-hidden="true"></div>
+
+<!-- ══════════ PASOS ══════════ -->
+<section class="section steps-section" aria-label="Cómo comprar">
+  <div class="section-header">
+    <div class="section-label">PROCESO DE COMPRA</div>
+    <h2 class="section-title">Comprar es <span class="gold">así de fácil</span></h2>
+    <p class="section-subtitle">En cuatro pasos simples tienes tu producto en casa.</p>
+  </div>
+  <div class="steps-container">
+    <div class="step" data-aos>
+      <div class="step-circle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="30" height="30"><rect x="2" y="8" width="20" height="12" rx="3"/><path d="M8 8V6a4 4 0 018 0v2"/></svg>
+      </div>
+      <div class="step-num">01</div>
+      <h3>Elige tu producto</h3>
+      <p>Explora el catálogo y selecciona el que más te interese.</p>
+    </div>
+    <div class="step-connector" aria-hidden="true"><div class="connector-line"></div></div>
+    <div class="step" data-aos>
+      <div class="step-circle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="30" height="30"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </div>
+      <div class="step-num">02</div>
+      <h3>Escríbenos por WhatsApp</h3>
+      <p>Confirma disponibilidad y coordina tu pedido directamente.</p>
+    </div>
+    <div class="step-connector" aria-hidden="true"><div class="connector-line"></div></div>
+    <div class="step" data-aos>
+      <div class="step-circle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="30" height="30"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+      </div>
+      <div class="step-num">03</div>
+      <h3>Realiza tu pago</h3>
+      <p>Elige tu método favorito. Aceptamos todos los métodos disponibles.</p>
+    </div>
+    <div class="step-connector" aria-hidden="true"><div class="connector-line"></div></div>
+    <div class="step" data-aos>
+      <div class="step-circle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="30" height="30"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div class="step-num">04</div>
+      <h3>Recibe con garantía</h3>
+      <p>Tu producto llega en máx. 2 días con rastreo y garantía incluida.</p>
+    </div>
+  </div>
+</section>
+
+<div class="greek-divider-full" aria-hidden="true"></div>
+
+<!-- ══════════ TESTIMONIOS ══════════ -->
+<section class="section testimonials-section alt" aria-label="Testimonios">
+  <div class="section-header">
+    <h2 class="section-title">Lo que dicen nuestros <span class="gold">clientes</span></h2>
+    <p class="section-subtitle">La confianza de nuestros compradores es nuestro mayor logro.</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card" data-aos>
+      <div class="t-stars">★★★★★</div>
+      <p>"Compré el iPhone 13 Pro Max y llegó en perfectas condiciones con su caja original. El trato fue excelente y muy rápido por WhatsApp. Totalmente recomendados."</p>
+      <div class="t-author">
+        <div class="t-avatar">CM</div>
+        <div><strong>Carlos M.</strong><span>Ciudad de México</span></div>
+      </div>
+    </div>
+    <div class="testimonial-card" data-aos>
+      <div class="t-stars">★★★★★</div>
+      <p>"La PS5 llegó en 3 días a Monterrey, bien empacada, con garantía y al mejor precio que encontré. Sin duda los mejores vendedores de consolas que he visto."</p>
+      <div class="t-author">
+        <div class="t-avatar">FR</div>
+        <div><strong>Fernanda R.</strong><span>Monterrey</span></div>
+      </div>
+    </div>
+    <div class="testimonial-card" data-aos>
+      <div class="t-stars">★★★★★</div>
+      <p>"Me dieron la opción de pagar en dos partes y fue muy sencillo. Atención directa, sin complicaciones. Ya les he comprado dos veces y siempre excelente servicio."</p>
+      <div class="t-author">
+        <div class="t-avatar">MT</div>
+        <div><strong>Miguel T.</strong><span>Guadalajara</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sales proof -->
+  <div class="sales-proof">
+    <div class="sales-proof-header">
+      <span class="sales-proof-badge">Referencias de ventas reales</span>
+      <p>Más de <strong>347 ventas realizadas</strong>. Próximamente compartimos capturas de conversaciones y entregas exitosas.</p>
+    </div>
+    <div class="sales-proof-grid">
+      <div class="proof-slot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        <span>Conversaciones<br><small>de WhatsApp</small></span>
+      </div>
+      <div class="proof-slot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+        <span>Fotos de<br><small>empaque</small></span>
+      </div>
+      <div class="proof-slot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span>Reseñas<br><small>verificadas</small></span>
+      </div>
+      <div class="proof-slot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M5 12h14M12 5l7 7-7 7"/><rect x="1" y="3" width="22" height="18" rx="3" stroke-width="1.3"/></svg>
+        <span>Guías de<br><small>entrega</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="greek-divider-full" aria-hidden="true"></div>
+
+<!-- ══════════ GARANTÍA ══════════ -->
+<section class="section guarantee-section" aria-label="Garantía">
+  <div class="guarantee-badge">GARANTÍA TOTAL</div>
+  <div class="guarantee-grid">
+    <div class="guarantee-left" data-aos>
+      <h2>Tu compra está <span class="gold">protegida</span></h2>
+      <p>Cada venta en Griegos Juegos viene respaldada por nuestra garantía de funcionamiento. No vendemos dudas, vendemos certeza.</p>
+      <ul class="guarantee-list">
+        <li><span class="g-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="15" height="15"><path d="M20 6L9 17l-5-5"/></svg></span> Verificación previa al envío</li>
+        <li><span class="g-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="15" height="15"><path d="M20 6L9 17l-5-5"/></svg></span> Empaque seguro y protegido</li>
+        <li><span class="g-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="15" height="15"><path d="M20 6L9 17l-5-5"/></svg></span> Fotos y video del producto antes de enviar</li>
+        <li><span class="g-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="15" height="15"><path d="M20 6L9 17l-5-5"/></svg></span> Soporte post-venta inmediato</li>
+        <li><span class="g-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="15" height="15"><path d="M20 6L9 17l-5-5"/></svg></span> Pago flexible en dos partes</li>
+        <li><span class="g-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="15" height="15"><path d="M20 6L9 17l-5-5"/></svg></span> Número de rastreo incluido en cada envío</li>
+      </ul>
+    </div>
+    <div class="guarantee-right" data-aos>
+      <div class="guarantee-cta-box">
+        <h3>¿Tienes alguna duda?</h3>
+        <p>Escríbenos ahora por WhatsApp. Nuestro equipo responde rápido y sin rodeos. Estamos listos para ayudarte a encontrar el producto ideal al mejor precio.</p>
+        <div class="guarantee-btns">
+          <a href="https://wa.me/5511913373569?text=Hola%21+Tengo+dudas+sobre+sus+productos+y+garantía.+%C2%BFMe+pueden+ayudar%3F"
+             class="btn-gold" target="_blank" rel="noopener noreferrer" id="btn-gua-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Escribir por WhatsApp
+          </a>
+          <a href="#catalogo" class="btn-outline-gold" id="btn-gua-cat">Ver catálogo completo</a>
+        </div>
+        <div class="response-badge">Tiempo de respuesta promedio: menos de 1 hora</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="greek-divider-full" aria-hidden="true"></div>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer id="contacto" class="footer">
+  <div class="greek-bar" style="opacity:.5" aria-hidden="true"></div>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="assets/images/logo.png" alt="Griegos Juegos" class="footer-logo">
+        <span class="footer-logo-text">Griegos Juegos</span>
+      </div>
+      <p class="footer-slogan">Tecnología y entretenimiento a un clic</p>
+      <p class="footer-desc">Consolas · Celulares · Accesorios<br>Con garantía · Envío a todo México</p>
+      <!-- Responsable -->
+      <div class="footer-responsible">
+        <span class="footer-resp-label">Responsable del negocio</span>
+        <span class="footer-resp-name">Antonio Morales</span>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#faq">Garantía y FAQ</a></li>
+        <li><a href="#redes">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-social-wrap">
+      <h4>Redes sociales</h4>
+      <div class="footer-social">
+        <a href="https://wa.me/5511913373569" class="social-btn wa-btn" target="_blank" rel="noopener noreferrer" id="footer-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp — 24/7
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61591544702781&locale=es_LA" class="social-btn fb-btn" target="_blank" rel="noopener noreferrer" id="footer-fb">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+        <a href="https://www.instagram.com/griego.juegos.tu.opcion/" class="social-btn ig-btn" target="_blank" rel="noopener noreferrer" id="footer-ig">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Griegos Juegos — Todos los derechos reservados</span>
+    <span>Videojuegos · Consolas · Celulares · México</span>
+  </div>
+</footer>
+
+<!-- ══════════ FLOATING WA ══════════ -->
+<a href="https://wa.me/5511913373569?text=Hola%21+Quiero+información+sobre+sus+productos"
+   class="wa-float" target="_blank" rel="noopener noreferrer" id="wa-float-btn" title="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white" width="28" height="28" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <span class="wa-pulse" aria-hidden="true"></span>
+</a>
+
+<!-- ══════════ CHATBOT ARES ══════════ -->
+<div class="chatbot-wrapper" id="chatbot-wrapper">
+  <button class="chatbot-fab" id="chatbot-fab" onclick="toggleChatbot()" title="Ares — Asistente de Griegos Juegos" aria-label="Abrir asistente">
+    <img src="assets/images/ares-icon.png" alt="Ares" class="chatbot-fab-img"
+         onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+    <svg style="display:none" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="24" height="24" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+    <span class="chatbot-notif" id="chatbot-notif" aria-label="1 mensaje nuevo">1</span>
+  </button>
+  <div class="chatbot-window" id="chatbot-window" role="dialog" aria-label="Chat con Ares">
+    <div class="chatbot-header">
+      <div class="chatbot-hdr-left">
+        <div class="chatbot-avatar-circle">
+          <img src="assets/images/ares-icon.png" alt="Ares" class="ares-avatar-img"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <svg style="display:none" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <div class="chatbot-hdr-info">
+          <span class="chatbot-name">Ares</span>
+          <span class="chatbot-status">Asistente Griegos Juegos</span>
+        </div>
+      </div>
+      <button class="chatbot-close-btn" onclick="toggleChatbot()" aria-label="Cerrar chat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages" aria-live="polite"></div>
+    <div class="chatbot-quick" id="chatbot-quick"></div>
+    <div class="chatbot-input-row">
+      <input type="text" id="chatbot-input" placeholder="Escribe tu pregunta..." onkeydown="if(event.key==='Enter')sendChat()" autocomplete="off" aria-label="Escribe tu mensaje">
+      <button class="chatbot-send-btn" onclick="sendChat()" aria-label="Enviar mensaje">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="js/chatbot.js"></script>
+<script src="js/main.js"></script>
+
+<!-- ⚔️ Desarrollado por Diego Alexander Zecua Zecua — CR7 | Diseño y programación © 2026. Todos los derechos reservados. Prohibida la reproducción sin autorización. -->
+
+<canvas id="particles-canvas" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0;" aria-hidden="true"></canvas>
+
+<script>
+/* ── PARTÍCULAS DORADAS — Firma: Diego Alexander Zecua Zecua ── */
+(function(){
+  const canvas = document.getElementById('particles-canvas');
+  const ctx    = canvas.getContext('2d');
+  let W, H, particles = [], animId;
+  const COLORS = ['#FAC775','#EF9F27','#FFE0A0','#FFF0CC','#D4A520'];
+
+  function resize(){
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+
+  function Particle(){
+    this.reset = function(){
+      this.x    = Math.random() * W;
+      this.y    = H + 10;
+      this.r    = Math.random() * 2.5 + 0.5;
+      this.vx   = (Math.random() - 0.5) * 0.6;
+      this.vy   = -(Math.random() * 1.2 + 0.4);
+      this.life = 0;
+      this.max  = Math.random() * 180 + 80;
+      this.col  = COLORS[Math.floor(Math.random()*COLORS.length)];
+      this.ang  = Math.random() * Math.PI * 2;
+      this.spin = (Math.random() - 0.5) * 0.06;
+    };
+    this.reset();
+    this.y = Math.random() * H; // scatter initial pos
+    this.life = Math.random() * this.max;
+  }
+
+  function init(){
+    resize();
+    particles = Array.from({length:55}, () => new Particle());
+    window.addEventListener('resize', resize);
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    particles.forEach(p => {
+      p.life++;
+      p.x  += p.vx;
+      p.y  += p.vy;
+      p.ang += p.spin;
+      const prog  = p.life / p.max;
+      const alpha = prog < 0.2 ? prog/0.2 : prog > 0.8 ? (1-prog)/0.2 : 1;
+      ctx.save();
+      ctx.globalAlpha = alpha * 0.55;
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.ang);
+      // Dibujar pequeño rombo/estrella
+      ctx.fillStyle = p.col;
+      ctx.beginPath();
+      ctx.moveTo(0,-p.r*2);
+      ctx.lineTo(p.r,0);
+      ctx.lineTo(0,p.r*2);
+      ctx.lineTo(-p.r,0);
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+      if(p.life >= p.max) p.reset();
+    });
+    animId = requestAnimationFrame(draw);
+  }
+
+  // Solo activar en secciones hero (al entrar a la página)
+  function startParticles(){
+    canvas.style.opacity = '1';
+    canvas.style.transition = 'opacity 1.5s ease';
+    draw();
+    // Desactivar después de 8 segundos para no distraer
+    setTimeout(() => {
+      canvas.style.opacity = '0';
+      setTimeout(() => cancelAnimationFrame(animId), 1600);
+    }, 8000);
+  }
+
+  init();
+  // Activar al cargar
+  window.addEventListener('load', () => setTimeout(startParticles, 600));
+})();
+</script>
 </body>
 </html>

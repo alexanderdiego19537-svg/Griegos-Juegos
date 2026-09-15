@@ -220,4 +220,28 @@
     }
   }, 10_000);
 
+  /* ─── MOBILE KEYBOARD FIX ─── */
+  // Actualiza --vh cuando el teclado se abre en iOS/Android
+  function setVH() {
+    const vh = window.visualViewport
+      ? window.visualViewport.height * 0.01
+      : window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  setVH();
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', () => {
+      setVH();
+      // Cuando el teclado aparece, hacer scroll al fondo del chat
+      if (chatOpen) scrollToBottom();
+    });
+  } else {
+    window.addEventListener('resize', setVH);
+  }
+
+  // Evitar que el input haga zoom en iOS (font-size >= 16px ya lo previene en CSS)
+  inputEl.addEventListener('focus', () => {
+    if (chatOpen) setTimeout(scrollToBottom, 350);
+  });
+
 })();
